@@ -7,7 +7,7 @@ import torch.nn.functional as f
 import torch.optim as optim
 import numpy as np
 
-STEPS = 250
+STEPS = 1000
 
 betas = t.linspace(.0001, .02, STEPS)
 alpha = 1 - betas
