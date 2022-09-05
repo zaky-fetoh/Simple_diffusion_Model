@@ -39,7 +39,6 @@ def sample(diffuser,num= 2):
 def plting(diffuser, num =5):
     ss = sample(diffuser,
                 num=num).detach().cpu().permute(0,2,3,1);
-
     for i in range(num):
         plt.subplot(1,num, i+1)
         plt.imshow(ss[i])
@@ -55,6 +54,7 @@ def train_(diffuser, opt,
             print(l)
             opt.step()
             opt.zero_grad();
+        plting(diffuser, 5)
 
 if __name__ == "__main__":
     diffuser = m.DM(256)
