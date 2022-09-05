@@ -2,8 +2,9 @@ import torch as t
 import model as m
 import dataset as dt
 
-import torch.optim as optim
+import matplotlib.pyplot as plt
 import torch.nn.functional as f
+import torch.optim as optim
 import numpy as np
 
 STEPS = 250
@@ -35,9 +36,19 @@ def sample(diffuser,num= 2):
         noise /= np.sqrt(alpha[i])
     return noise
 
+def plting(diffuser, num =5):
+    ss = sample(diffuser,
+                num=num).detach().cpu().permute(0,2,3,1);
+
+    for i in range(num):
+        plt.subplot(1,num, i+1)
+        plt.imshow(ss[i])
+
 def train_(diffuser, opt,
            loss = diffloss , epochs = 1000):
     for i in range(epochs):
+        print("Epoch NUMber:", end=" ")
+        print(i)
         for imgs, labels in dt.trainloader:
             imgs = imgs.cuda()
             l = loss(diffuser, imgs)
