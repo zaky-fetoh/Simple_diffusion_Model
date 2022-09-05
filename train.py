@@ -26,7 +26,7 @@ def diffloss(diffuser, X, steps=STEPS):
         loss = f.mse_loss(predNoise, noise,)
         loss.backward()
         culoss += loss.item()
-    return culoss
+    return culoss/steps
 
 @t.no_grad()
 def sample(diffuser,num= 2):
