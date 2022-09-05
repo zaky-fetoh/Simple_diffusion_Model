@@ -28,7 +28,7 @@ def diffloss(diffuser, X, steps=STEPS):
         culoss += loss.item()
     return culoss
 
-
+@t.no_grad()
 def sample(diffuser,num= 2):
     noise = t.randn_like(num, 3, 32,32).cuda()
     for i in range( STEPS -1, 0, -1):
