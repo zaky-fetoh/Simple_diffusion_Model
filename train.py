@@ -46,8 +46,7 @@ def plting(diffuser, num =5):
 def train_(diffuser, opt,
            loss = diffloss , epochs = 1000):
     for i in range(epochs):
-        print("Epoch NUMber:", end=" ")
-        print(i)
+        print("Epoch NUMber:" + str(i))
         for imgs, labels in dt.trainloader:
             imgs = imgs.cuda()
             l = loss(diffuser, imgs)
