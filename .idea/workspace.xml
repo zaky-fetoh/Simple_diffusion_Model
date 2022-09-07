@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c72c72c-87bc-4a7a-b739-5dad73addd07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dorg.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dorg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/AE_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/AE_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,9 @@
       <module name="diffusionModel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -54,6 +60,9 @@
       <module name="diffusionModel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -72,6 +81,9 @@
       <module name="diffusionModel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -90,6 +102,9 @@
       <module name="diffusionModel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -132,10 +147,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1662370183562" />
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1662369843514">
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1662552371048">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1662369843514" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1662552371048" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1662384834362">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

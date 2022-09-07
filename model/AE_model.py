@@ -86,7 +86,7 @@ class ReversBlock(nn.Module):
         X = self.up(X,time_code)
         return X
 
-def construct_AE(sym_channels=[3, 32, 64, ],
+def construct_AE(sym_channels=[1, 64, 128, ],
                  time_dim = 100,
                  down=[True] * 2):
     tnn = convBlock(sym_channels[-1],

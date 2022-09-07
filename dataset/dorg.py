@@ -4,16 +4,17 @@ import torchvision.transforms as transforms
 
 transform = transforms.Compose(
     [transforms.ToTensor(),
-     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+     #transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+     ])
 
 batch_size = 256
 
-trainset = tv.datasets.CIFAR10(root='./data', train=True,
+trainset = tv.datasets.MNIST(root='./data', train=True,
                                         download=True, transform=transform)
 trainloader = t.utils.data.DataLoader(trainset, batch_size=batch_size,
                                           shuffle=True, num_workers=2)
 
-testset = tv.datasets.CIFAR10(root='./data', train=False,
+testset = tv.datasets.MNIST(root='./data', train=False,
                                        download=True, transform=transform)
 testloader = t.utils.data.DataLoader(testset, batch_size=batch_size,
                                          shuffle=False, num_workers=2)
