@@ -6,7 +6,7 @@ class SiLU(nn.Module):
     def __init__(self):
         super(SiLU, self).__init__()
     def forward(self, x):
-        return f.sigmoid(x)*x
+        return t.sigmoid(x)*x
 
 
 class Identity(nn.Module):
@@ -43,7 +43,7 @@ class convBlock(nn.Module):
         if time_code is not None :
             ps = self.pen(time_code)
             x += ps.view(time_code.shape[0],-1,1,1)
-        return f.sigmoid(x) * x
+        return t.sigmoid(x) * x
 
 class convtBlock(nn.Module):
     def __init__(self, inchannels, outchannels,
@@ -65,7 +65,7 @@ class convtBlock(nn.Module):
         if time_code is not None:
             ps = self.pen(time_code)
             x += ps.view(time_code.shape[0],-1,1,1)
-        return f.sigmoid(x) * x
+        return t.sigmoid(x) * x
 
 class ReversBlock(nn.Module):
     def __init__(self, inchannels, outchannels,
